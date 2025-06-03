@@ -112,8 +112,8 @@ if __name__ == "__main__":
         end_date=end_date,
         base_url=base_url,
         output_dir="./dea_data",
-        multithread=True,
-        max_workers=4
+        multithread=True, #optional
+        max_workers=4 #optional
     )
 
 
