@@ -10,6 +10,10 @@ Resources:
     DEA Water Observations: https://data.dea.ga.gov.au/?prefix=derivative/ga_ls_wo_3/1-6-0/
     DEA AWS Knowledge Base: https://knowledge.dea.ga.gov.au/guides/setup/AWS/data_and_metadata/
 
+    
+Required Packages:
+    AWS CLI (can be installed from Anaconda Navigator)
+
 """
 
 
