@@ -95,13 +95,29 @@ def download_dea_data(paths, rows, start_date, end_date,
             run_download(cmd, s3_path)
 
 
-# Usage
-            
+
+"""
+------------------------------------------------------------------------------------
+CHANGE VARIABLES BELOW IN MAIN SECTION TO DOWNLOAD DATASETS
+    [MANDATORY]
+    rows = landsat row ID
+    start_date = start date
+    end_date = end date
+    base_url = "s3://dea-public-data/derivative/ga_ls_wo_3/1-6-0"  
+        ^^ change above url if you'd like to dowload other data products like Surface Reflectance or Coastlines 
+        ^^ Resource - https://knowledge.dea.ga.gov.au/guides/setup/AWS/data_and_metadata/
+    
+    [OPTIONAL]
+    multithread <- depends on your CPU
+    max_workers <- depends on your CPU
+------------------------------------------------------------------------------------
+"""
+
 if __name__ == "__main__":
 
-    paths = ['100', '101', '102']
+    paths = ['100', '101']
     rows = ['080']
-    start_date = "2025-04-25"
+    start_date = "2025-05-01"
     end_date = "2025-06-25"
     base_url = "s3://dea-public-data/derivative/ga_ls_wo_3/1-6-0"
 
